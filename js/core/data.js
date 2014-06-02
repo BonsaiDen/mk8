@@ -649,7 +649,9 @@ app.core.data = {
         "weight": 0,
         "handling": 0,
         "traction": 0
-    }]
+    }],
+
+    BodyTypes: ['Kart', 'Bike', 'ATV']
 
 };
 
@@ -671,4 +673,31 @@ for(var i in app.core.data.CharacterGroup) {
 
     }
 }
+
+app.core.data.Characters.sort(function(a, b) {
+    if (a.weight === b.weight) {
+        return a.name.localeCompare(b.name);
+
+    } else {
+        return a.weight - b.weight;
+    }
+});
+
+app.core.data.Bodies.sort(function(a, b) {
+    if (a.type === b.type) {
+        return a.name.localeCompare(b.name);
+
+    } else {
+        return app.core.data.BodyTypes.indexOf(a.type) - app.core.data.BodyTypes.indexOf(b.type);
+    }
+
+});
+
+app.core.data.Tires.sort(function(a, b) {
+    return a.name.localeCompare(b.name);
+});
+
+app.core.data.Gliders.sort(function(a, b) {
+    return a.name.localeCompare(b.name);
+});
 
