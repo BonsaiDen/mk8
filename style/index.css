@@ -6,4 +6,11 @@ body {
   background-color: #202020;
   background-image: url('../img/dark_Tire.png');
 }
-/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22style%2Findex.less%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAAA%3BEACI%2CYAAA%3B%3BAAGJ%3BEACI%2CYAAA%3BEACA%2CyBAAA%3BEACA%2CsBAAsB%2CuBAAtB%22%7D */
+body div.copyright {
+  position: absolute;
+  bottom: 0px;
+  color: #ffffff;
+  font-size: 15px;
+  margin: 20px;
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22style%2Findex.less%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAAA%3BEACI%2CYAAA%3B%3BAAGJ%3BEACI%2CYAAA%3BEACA%2CyBAAA%3BEACA%2CsBAAsB%2CuBAAtB%3B%3BAAHJ%2CIAKI%2CIAAG%3BEACC%2CkBAAA%3BEACA%2CWAAA%3BEACA%2CcAAA%3BEACA%2CeAAA%3BEACA%2CYAAA%22%7D */
