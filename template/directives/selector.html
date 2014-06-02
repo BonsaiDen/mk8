@@ -1,0 +1,73 @@
+
+<div class="selector">
+  <table class="table grid">
+    <thead>
+      <th>Character</th>
+      <th>Body</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <select ng-model="selection.character" ng-options="c.name for c in app.core.data.Characters" ng-change="update()" class="character"></select>
+        </td>
+        <td>
+          <select ng-model="selection.body" ng-options="c.name for c in app.core.data.Bodies" class="body"></select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table class="table small">
+            <tbody stats="app.core.data.Characters[selection.character]" info="true" range="character"></tbody>
+          </table>
+        </td>
+        <td>
+          <table class="table small">
+            <tbody stats="app.core.data.Bodies[selection.body]" info="true" range="part"></tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table grid">
+    <thead>
+      <th>Tires</th>
+      <th>Glider</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <select ng-model="selection.tires" ng-options="c.name for c in app.core.data.Tires" class="tires"></select>
+        </td>
+        <td>
+          <select ng-model="selection.glider" ng-options="c.name for c in app.core.data.Gliders" class="glider"></select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table class="table small">
+            <tbody stats="app.core.data.Tires[selection.tires]" info="true" range="part"></tbody>
+          </table>
+        </td>
+        <td>
+          <table class="table small">
+            <tbody stats="app.core.data.Gliders[selection.glider]" info="true" range="part"></tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table grid full">
+    <thead>
+      <th>Overall</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <table class="table small full">
+            <tbody scale="overall"></tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,27 @@
+.dd-options {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 200px;
+}
+a.dd-option,
+a.dd-selected {
+  background-color: #ffffff;
+  height: 40px;
+  padding: 5px;
+  cursor: pointer;
+}
+a.dd-option img,
+a.dd-selected img {
+  max-width: 46px;
+  margin-right: 0px;
+}
+a.dd-option label,
+a.dd-selected label {
+  margin-left: 5px;
+  line-height: 30px;
+  cursor: pointer;
+}
+table.small tr td {
+  padding: 4px;
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22style%2Foptions.less%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAAA%3BEACI%2CgBAAA%3BEACA%2CkBAAA%3BEACA%2CiBAAA%3B%3BAAGJ%2CCAAC%3BAAAY%2CCAAC%3BEAEV%2CyBAAA%3BEAEA%2CYAAA%3BEACA%2CYAAA%3BEAOA%2CeAAA%3B%3BAAZJ%2CCAAC%2CUAOG%3BAAPS%2CCAAC%2CYAOV%3BEACI%2CeAAA%3BEACA%2CiBAAA%3B%3BAATR%2CCAAC%2CUAaG%3BAAbS%2CCAAC%2CYAaV%3BEACI%2CgBAAA%3BEACA%2CiBAAA%3BEACA%2CeAAA%3B%3BAAKR%2CKAAK%2CMACD%2CGACI%3BEACI%2CYAAA%22%7D */

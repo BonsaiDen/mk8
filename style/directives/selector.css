@@ -1,0 +1,115 @@
+.selector {
+  margin: 10px;
+  border: 2px solid #e0e0e0;
+  width: 438px;
+  float: left;
+  background-color: #ffffff;
+  background-image: url('../../img/white_carbon.png');
+}
+.selector .grid {
+  margin-bottom: 0px;
+  margin: 0px;
+}
+.selector .grid th,
+.selector .grid td {
+  display: inline-block;
+  width: 216px;
+  border: none;
+}
+.selector .grid th {
+  padding-bottom: 0px;
+}
+.selector .grid.full {
+  width: 532px;
+}
+.selector .grid.full td {
+  width: 436px;
+}
+.selector .grid .small {
+  margin-bottom: 0px;
+}
+.selector .grid .small th,
+.selector .grid .small td {
+  font-size: 13px;
+  width: 100px;
+}
+.selector .grid .small th:first-child,
+.selector .grid .small td:first-child {
+  font-weight: bold;
+  text-align: right;
+  padding-right: 10px;
+}
+.selector .grid .small.full {
+  width: 420px;
+}
+.selector .grid .small.full td:first-child {
+  padding-right: 0px;
+}
+.selector .grid .small.full td:last-child {
+  width: 280px;
+}
+.selector .grid .small.full td.value {
+  width: 40px;
+  text-align: center;
+}
+.selector .grid .small.full div.indicator {
+  position: relative;
+  width: 272px;
+  height: 15px;
+  margin-top: 3px;
+  background-color: #333333;
+}
+.selector .grid .small.full div.indicator div.bar {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 15px;
+  width: 50%;
+}
+.selector .grid .small.full div.indicator div.steps {
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 15px;
+}
+.selector .grid .small.full div.indicator div.step {
+  display: inline-block;
+  width: 41px;
+  height: 15px;
+  border-left: 1px solid #ffffff;
+}
+.selector .grid .small.full div.indicator div.step:first-child {
+  border-left: none;
+}
+.selector .horrible td {
+  background-color: #ff9999;
+}
+.selector .bad td {
+  background-color: #ffcc99;
+}
+.selector .good td {
+  background-color: #b3ff99;
+}
+.selector .excellent td {
+  background-color: #99c3ff;
+}
+.selector div.bar {
+  -webkit-transition: background-color 1s, width 1s;
+  -moz-transition: background-color 1s, width 1s;
+  transition: background-color 1s, width 1s;
+}
+.selector div.bar.horrible {
+  background-color: #ff3333;
+}
+.selector div.bar.bad {
+  background-color: #ff9933;
+}
+.selector div.bar.good {
+  background-color: #66ff33;
+}
+.selector div.bar.excellent {
+  background-color: #3388ff;
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22style%2Fdirectives%2Fselector.less%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAAA%3BEACI%2CYAAA%3BEACA%2CyBAAA%3BEACA%2CYAAA%3BEACA%2CWAAA%3BEACA%2CyBAAA%3BEACA%2CsBAAsB%2C6BAAtB%3B%3BAANJ%2CSAQI%3BEACI%2CkBAAA%3BEACA%2CWAAA%3B%3BAAVR%2CSAQI%2CMAII%3BAAZR%2CSAQI%2CMAIQ%3BEACA%2CqBAAA%3BEACA%2CYAAA%3BEACA%2CYAAA%3B%3BAAfZ%2CSAQI%2CMAUI%3BEACI%2CmBAAA%3B%3BAAGJ%2CSAdJ%2CMAcK%3BEACG%2CYAAA%3B%3BAADJ%2CSAdJ%2CMAcK%2CKAEG%3BEACI%2CYAAA%3B%3BAAzBhB%2CSAQI%2CMAqBI%3BEACI%2CkBAAA%3B%3BAA9BZ%2CSAQI%2CMAqBI%2COAEI%3BAA%2FBZ%2CSAQI%2CMAqBI%2COAEQ%3BEAMA%2CeAAA%3BEACA%2CYAAA%3B%3BAANA%2CSAxBZ%2CMAqBI%2COAEI%2CGACK%3BAAAD%2CSAxBZ%2CMAqBI%2COAEQ%2CGACC%3BEACG%2CiBAAA%3BEACA%2CiBAAA%3BEACA%2CmBAAA%3B%3BAAMR%2CSAjCR%2CMAqBI%2COAYK%3BEAQG%2CYAAA%3B%3BAALI%2CSApChB%2CMAqBI%2COAYK%2CKAEG%2CGACK%3BEACG%2CkBAAA%3B%3BAAJZ%2CSAjCR%2CMAqBI%2COAYK%2CKASG%2CGAAE%3BEACE%2CYAAA%3B%3BAAVR%2CSAjCR%2CMAqBI%2COAYK%2CKAaG%2CGAAE%3BEACE%2CWAAA%3BEACA%2CkBAAA%3B%3BAAfR%2CSAjCR%2CMAqBI%2COAYK%2CKAkBG%2CIAAG%3BEAEC%2CkBAAA%3BEACA%2CYAAA%3BEACA%2CYAAA%3BEACA%2CeAAA%3BEACA%2CyBAAA%3B%3BAAxBR%2CSAjCR%2CMAqBI%2COAYK%2CKAkBG%2CIAAG%2CUAQC%2CIAAG%3BEACC%2CUAAA%3BEACA%2CkBAAA%3BEACA%2CQAAA%3BEACA%2CSAAA%3BEACA%2CYAAA%3BEACA%2CUAAA%3B%3BAAhCZ%2CSAjCR%2CMAqBI%2COAYK%2CKAkBG%2CIAAG%2CUAiBC%2CIAAG%3BEACC%2CUAAA%3BEACA%2CkBAAA%3BEACA%2CQAAA%3BEACA%2CSAAA%3BEACA%2CYAAA%3B%3BAAxCZ%2CSAjCR%2CMAqBI%2COAYK%2CKAkBG%2CIAAG%2CUAyBC%2CIAAG%3BEACC%2CqBAAA%3BEACA%2CWAAA%3BEACA%2CYAAA%3BEACA%2C8BAAA%3B%3BAAEA%2CSAlFpB%2CMAqBI%2COAYK%2CKAkBG%2CIAAG%2CUAyBC%2CIAAG%2CKAME%3BEACG%2CiBAAA%3B%3BAA3F5B%2CSAoGI%2CUAAU%3BEACN%2CyBAAA%3B%3BAArGR%2CSAwGI%2CKAAK%3BEACD%2CyBAAA%3B%3BAAzGR%2CSA4GI%2CMAAM%3BEACF%2CyBAAA%3B%3BAA7GR%2CSAgHI%2CWAAW%3BEACP%2CyBAAA%3B%3BAAjHR%2CSAqHI%2CIAAG%3BEACC%2CiDAAA%3BEACA%2C8CAAA%3BEACA%2CyCAAA%3B%3BAAxHR%2CSA2HI%2CIAAG%2CIAAI%3BEACH%2CyBAAA%3B%3BAA5HR%2CSA%2BHI%2CIAAG%2CIAAI%3BEACH%2CyBAAA%3B%3BAAhIR%2CSAmII%2CIAAG%2CIAAI%3BEACH%2CyBAAA%3B%3BAApIR%2CSAuII%2CIAAG%2CIAAI%3BEACH%2CyBAAA%22%7D */
