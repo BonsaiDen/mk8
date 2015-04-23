@@ -20,6 +20,14 @@ app.core.data = {
             traction: 4.25
         },
 
+        'medium.0': {
+            speed: 3.25,
+            acceleration: 3,
+            weight: 3,
+            handling: 3.75,
+            traction: 4.00
+        },
+
         'medium.A': {
             speed: 3.25,
             acceleration: 2.75,
@@ -32,6 +40,14 @@ app.core.data = {
             speed: 3.75,
             acceleration: 2.5,
             weight: 3.75,
+            handling: 3.25,
+            traction: 3.75
+        },
+
+        'medium.C': {
+            speed: 3.75,
+            acceleration: 2.75,
+            weight: 3.5,
             handling: 3.25,
             traction: 3.75
         },
@@ -58,7 +74,8 @@ app.core.data = {
             weight: 4.75,
             handling: 2.25,
             traction: 3.25
-        }
+        },
+
 
     },
 
@@ -79,6 +96,9 @@ app.core.data = {
         Larry:         'light.B',
         Wendy:         'light.B',
 
+        CatPeach:       'medium.0',
+        VillagerFemale: 'medium.0',
+
         PrincessPeach: 'medium.A',
         PrincessDaisy: 'medium.A',
         Yoshi:         'medium.A',
@@ -88,6 +108,9 @@ app.core.data = {
         Iggy:          'medium.B',
         Ludwig:        'medium.B',
         MiiMedium:     'medium.B',
+
+        TanookiMario:  'medium.C',
+        VillagerMale:  'medium.C',
 
         DonkeyKong:    'heavy.A',
         Waluigi:       'heavy.A',
@@ -110,6 +133,7 @@ app.core.data = {
         BabyMario: "img/32px-MK8_BabyMario_Icon.png",
         BabyPeach: "img/24px-MK8_BabyPeach_Icon.png",
         BabyRosalina: "img/25px-MK8_BabyRosalina_Icon.png",
+        CatPeach: "img/32px-MK8_Peach_Icon.png",
         Bowser: "img/32px-MK8_Bowser_Icon.png",
         DonkeyKong: "img/25px-MK8_DKong_Icon.png",
         Iggy: "img/29px-MK8_Iggy_Icon.png",
@@ -131,12 +155,15 @@ app.core.data = {
         Rosalina: "img/30px-MK8_Rosalina_Icon.png",
         Roy: "img/32px-MK8_Roy_Icon.png",
         ShyGuy: "img/32px-MK8_ShyGuy_Icon.png",
+        TanookiMario: "img/32px-MK8_Mario_Icon.png",
         Toad: "img/32px-MK8_Toad_Icon.png",
         Toadette: "img/32px-MK8_Toadette_Icon.png",
         Waluigi: "img/27px-MK8_Waluigi_Icon.png",
         Wario: "img/32px-MK8_Wario_Icon.png",
         Wendy: "img/32px-MK8_Wendy_Icon.png",
-        Yoshi: "img/32px-MK8_Yoshi_Icon.png"
+        Yoshi: "img/32px-MK8_Yoshi_Icon.png",
+        VillagerMale: "img/32px-MK8_ShyGuy_Icon.png",
+        VillagerFemale: "img/32px-MK8_ShyGuy_Icon.png",
     },
 
     Bodies: [{
@@ -538,10 +565,28 @@ app.core.data = {
         "weight": 0.5,
         "handling": 0,
         "traction": -0.5
+    }, {
+        "name": "Leaf Tires",
+        "img": "img/100px-Leaf_TiresMK8.jpg",
+        "type": "Tires",
+        "speed": -0.5,
+        "acceleration": 1,
+        "weight": -0.5,
+        "handling": 0.25,
+        "traction": -0.5
     }],
 
 
     Gliders: [{
+        "name": "Paper Glider",
+        "img": "img/100px-PaperGliderIcon-MK8.png",
+        "type": "Gliders",
+        "speed": 0,
+        "acceleration": 0,
+        "weight": 0,
+        "handling": 0,
+        "traction": 0
+    }, {
         "name": "Super Glider",
         "img": "img/100px-SuperGliderMK8.png",
         "type": "Gliders",
